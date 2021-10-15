@@ -1,0 +1,19 @@
+.companies {
+    background-color: #f8f8f8;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    margin: 68px 0 0;
+}
+
+.companies__title h2 {
+    color: #524552;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.campanies__slider:focus-visible, .campanies__slider > *:focus-visible {
+    outline: none;
+}

@@ -1,0 +1,116 @@
+.pricing {
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 5px 40px 0 rgb(0 0 0 / 11%);
+    padding: 0;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.pricing__header {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 5px 5px 0 0;
+    /* background-image: url("http://localhost:3000/images/pricing/place-img1.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing__header::before {
+    content: "";
+    position: absolute;
+    background-color: #524552;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.65;
+    z-index: 0;
+}
+
+.pricing__header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("http://localhost:3000/images/pricing/pricing-shape.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing__header h3 {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.pricing__price h2 {
+    text-align: center;
+    color: #524552;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pricing__price h2 sub {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    bottom: 2px;
+}
+
+.pricing__btn a {
+    color: #ff5d22;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #ff5d22;
+    border-radius: 4px;
+    padding: 12px 36px;
+    transition: all 0.25s ease-in-out;
+}
+
+.pricing__btn a:hover {
+    color: #ffffff;
+    background-color: #ff5d22;
+}
+
+.pricing__feature {
+    list-style: none;
+    padding: 0 32px;
+}
+
+.pricing__feature li {
+    color: #524552;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.pricing__feature--checked {
+    height: 20px;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .pricing__header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .pricing__header::after {
+        content: none;
+    }
+}

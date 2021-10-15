@@ -1,0 +1,87 @@
+.contact {
+    padding-top: 32px;
+    padding-bottom: 28px;
+    background: url("http://localhost:3000/images/companies/bg-map.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contact__title h6 {
+    color: #ff5d22;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact__title h3 {
+    color: #524552;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.contact__title p {
+    color: #554955;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact__list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+.contact__info-icon {
+    position: relative;
+    border: 1px dashed #ff5d22;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__info-icon img {
+    height: 32px;
+    object-fit: contain;
+}
+
+.contact__info-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff5d22;
+    margin: 6px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.contact__info {
+    flex: 1;
+}
+
+.contact__info h4 {
+    color: #524552;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.contact__info p, .contact__info a {
+    color: #554955;
+    font-weight: 400;
+    line-height: 1.8;
+    display: block;
+    text-decoration: none;
+    transition: all 0.25s linear;
+}
+
+.contact__info a:hover {
+    color: #ff5d22;
+}
