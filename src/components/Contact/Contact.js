@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { Col, Row } from "react-bootstrap";
+import FormComponent from "./Form";
 
 function Contact() {
   return (
@@ -49,8 +50,11 @@ function Contact() {
               </div>
             </li>
           </ul>
-          <ul className="contact__social list-unstyled">
-              <li></li>
+          <ul className="contact__social list-unstyled d-flex gap-3">
+              <li> <a href="#"> <img src="/images/companies/facebook.png" alt="facebook icon" /> </a> </li>
+              <li> <a href="#"> <img src="/images/companies/twitter.png" alt="facebook icon" /> </a> </li>
+              <li> <a href="#"> <img src="/images/companies/linkedin.png" alt="facebook icon" /> </a> </li>
+              <li> <a href="#"> <img src="/images/companies/instagram.png" alt="facebook icon" /> </a> </li>
           </ul>
         </Col>
         <Col xs="12" lg="6" className="mb-4" style={{zIndex: 1}}>
@@ -62,6 +66,7 @@ function Contact() {
               Your email address will not be published. We promise not to spam!{" "}
             </p>
           </div>
+          <FormComponent />
         </Col>
       </Row>
     </div>
