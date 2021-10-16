@@ -105,9 +105,16 @@
   background-color: #ff5d22;
 }
 
-.contact__social li a > img {
+.contact__social li a:hover > svg {
+  color: white;
+}
+
+.contact__social li a > svg {
+  color: #ff5d22;
   width: 22px;
+  height: 22px;
   object-fit: contain;
+  transition: all 0.25s linear;
 }
 
 .contact__form .form-control {
@@ -126,11 +133,6 @@
   color: #fff;
   background-color: #ff5d22;
   font-weight: 600;
-  font-size: 20px;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 24px;
-  transition: all 0.35s ease-in-out;
   box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 50%) !important;
 }
 
@@ -169,7 +171,15 @@
   .contact__form .form-btn {
     font-weight: 600;
     font-size: 18px;
-
     padding: 12px 20px;
+  }
+  
+  .contact__social li a {
+    padding: 12px;
+  }
+
+  .contact__social li a > svg {
+    width: 20px;
+    height: 20px;
   }
 }

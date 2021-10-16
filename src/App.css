@@ -2,3 +2,11 @@
   min-height: 100vh;
   margin: 20px auto;
 }
+
+.default-btn {
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  transition: all 0.35s ease-in-out;
+}

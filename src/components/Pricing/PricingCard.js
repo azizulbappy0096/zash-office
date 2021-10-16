@@ -24,29 +24,38 @@ function PricingCard({ type, price, id, features, bg }) {
   return (
     <Col xs="12" md="6" lg="4">
       <div className="pricing">
-        <div className="pricing__header" style={{backgroundImage: `url(${bg})`}}>
+        <div
+          className="pricing__header"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
           <h3> {type} </h3>
         </div>
         <div className="pricing__price">
           <h2 className="mt-4 mb-2 mb-md-4">
-            <sub>$</sub>{price}<sub>/MO</sub>
+            <sub>$</sub>
+            {price}
+            <sub>/MO</sub>
           </h2>
         </div>
         <div className="pricing__btn my-5 text-center">
           <a href="/"> Book Now </a>
         </div>
         <ul className="pricing__feature">
-            {features.map(item => (
-                 <li>
-                     {item.checked ? <img
-                   className="pricing__feature--checked me-2"
-                   src="/images/pricing/check.png"
-                   alt="checked"
-                 /> : <CloseIcon />}
-                 
-                 <span> {item.name} </span>
-               </li>
-            ))}
+          {features.map((item) => (
+            <li>
+              {item.checked ? (
+                <img
+                  className="pricing__feature--checked me-2"
+                  src="/images/pricing/check.png"
+                  alt="checked"
+                />
+              ) : (
+                <CloseIcon />
+              )}
+
+              <span> {item.name} </span>
+            </li>
+          ))}
         </ul>
       </div>
     </Col>

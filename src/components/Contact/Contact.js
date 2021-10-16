@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import { Col, Row } from "react-bootstrap";
 import FormComponent from "./Form";
+import { Facebook, Instagram, LinkedIn, Twitter } from "./SocialIcons";
 
 function Contact() {
   return (
@@ -51,10 +52,10 @@ function Contact() {
             </li>
           </ul>
           <ul className="contact__social list-unstyled d-flex gap-3">
-              <li> <a href="/#"> <img src="/images/companies/facebook.png" alt="facebook icon" /> </a> </li>
-              <li> <a href="/#"> <img src="/images/companies/twitter.png" alt="twitter icon" /> </a> </li>
-              <li> <a href="/#"> <img src="/images/companies/linkedin.png" alt="linkedin icon" /> </a> </li>
-              <li> <a href="/#"> <img src="/images/companies/instagram.png" alt="insta icon" /> </a> </li>
+              <li> <a href="/#"> <Facebook /> </a> </li>
+              <li> <a href="/#"> <Twitter /> </a> </li>
+              <li> <a href="/#"> <LinkedIn /> </a> </li>
+              <li> <a href="/#"> <Instagram /> </a> </li>
           </ul>
         </Col>
         <Col xs="12" lg="6" className="mb-4" style={{zIndex: 1}}>

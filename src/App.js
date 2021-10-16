@@ -5,6 +5,7 @@ import './App.css';
 import Companies from './components/Companies/Companies';
 import Pricing from './components/Pricing/Pricing';
 import Contact from "./components/Contact/Contact";
+import Join from "./components/Join/Join";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Pricing />
       <Companies />
       <Contact />
+      <Join />
     </div>
   );
 }
