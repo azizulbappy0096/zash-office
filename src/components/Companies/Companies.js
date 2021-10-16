@@ -12,22 +12,16 @@ function SwipeToSlide({ companies }) {
     swipeToSlide: true,
     arrows: false,
     responsive: [
-        {
-            breakpoint: 1124,
-            settings: {
-              slidesToShow: 4,
-            },
-          },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
     ],

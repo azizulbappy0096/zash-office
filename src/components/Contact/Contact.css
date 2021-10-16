@@ -79,6 +79,7 @@
   font-weight: 400;
   line-height: 1.8;
   display: block;
+  width: fit-content;
   text-decoration: none;
   transition: all 0.25s linear;
 }
@@ -88,51 +89,87 @@
 }
 
 .contact__social {
-    padding-left: 90px;
+  padding-left: 90px;
 }
 
 .contact__social li a {
-    background: #f1f4f4;
-    padding: 16px;
-    border-radius: 50%;
-    text-align: center;
-    display: block;
-    transition: all 0.25s linear;
+  background: #f1f4f4;
+  padding: 16px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  transition: all 0.25s linear;
 }
 
 .contact__social li a:hover {
-    background-color: #ff5d22;
+  background-color: #ff5d22;
 }
 
 .contact__social li a > img {
-    width: 22px;
-    object-fit: contain;
+  width: 22px;
+  object-fit: contain;
 }
 
 .contact__form .form-control {
-    height: 56px;
-    border: none;
-    box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%) !important;
-    font-size: 18px;
+  height: 56px;
+  border: none;
+  box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 20%) !important;
+  font-size: 18px;
 }
 
 .contact__form textarea.form-control {
-    height: auto;
-    padding-top: 24px;
+  height: auto;
+  padding-top: 24px;
 }
 
 .contact__form .form-btn {
-    color: #fff;
-    background-color: #ff5d22;
-    font-weight: 600;
-    font-size: 20px;
-    border: none;
-    border-radius: 6px;
-    padding: 12px 24px;
-    transition: all 0.35s ease-in-out;
-    box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 50%) !important;
+  color: #fff;
+  background-color: #ff5d22;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  transition: all 0.35s ease-in-out;
+  box-shadow: 0px 5px 28.5px 1.5px rgb(149 152 200 / 50%) !important;
 }
 
 .contact__form .form-btn:hover {
-    background-color: #524552;
+  background-color: #524552;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact__title h6 {
+    font-size: 16px;
+  }
+
+  .contact__title h3 {
+    font-size: 28px;
+  }
+
+  .contact__info-icon {
+    height: 64px;
+    width: 64px;
+  }
+
+  .contact__info-icon img {
+    height: 24px;
+  }
+
+  .contact__info h4 {
+    font-size: 18px;
+  }
+
+  .contact__info p,
+  .contact__info a {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .contact__form .form-btn {
+    font-weight: 600;
+    font-size: 18px;
+
+    padding: 12px 20px;
+  }
 }

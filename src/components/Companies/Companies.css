@@ -14,6 +14,21 @@
     margin-bottom: 24px;
 }
 
+.campanies__slider img {
+    width: 150px;
+    object-fit: contain;
+}
+
 .campanies__slider:focus-visible, .campanies__slider > *:focus-visible {
     outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .companies__title h2 {
+        font-size: 18px;
+    }
+
+    .campanies__slider img {
+        width: 120px;
+    }
 }

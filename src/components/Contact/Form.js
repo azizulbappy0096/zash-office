@@ -4,7 +4,7 @@ import { Form, Row, Col } from "react-bootstrap";
 
 function FormComponent() {
   return (
-    <Form className="contact__form pt-5 mt-2">
+    <Form className="contact__form pt-4 pt-md-5 mt-2">
       <Row>
         <Form.Group as={Col} xs={12} md={6} controlId="name" className="mb-3">
           <Form.Control type="text" placeholder="Name" />

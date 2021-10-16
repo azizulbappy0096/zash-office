@@ -28,7 +28,7 @@ function PricingCard({ type, price, id, features, bg }) {
           <h3> {type} </h3>
         </div>
         <div className="pricing__price">
-          <h2 className="my-4">
+          <h2 className="mt-4 mb-2 mb-md-4">
             <sub>$</sub>{price}<sub>/MO</sub>
           </h2>
         </div>

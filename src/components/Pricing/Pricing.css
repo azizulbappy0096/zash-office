@@ -15,7 +15,6 @@
     padding-top: 100px;
     padding-bottom: 100px;
     border-radius: 5px 5px 0 0;
-    /* background-image: url("http://localhost:3000/images/pricing/place-img1.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,5 +111,21 @@
 
     .pricing__header::after {
         content: none;
+    }
+
+    .pricing__header h3 {
+        font-size: 22px;
+    }
+
+    .pricing__price h2 {
+        font-size: 36px;
+    }
+
+    .pricing__feature li {
+        font-size: 18px;
+    }
+
+    .pricing__feature--checked {
+        height: 18px;
     }
 }
