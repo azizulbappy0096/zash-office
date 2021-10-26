@@ -1,3 +1,4 @@
+// modules
 import React from "react";
 import { Col } from "react-bootstrap";
 
@@ -5,7 +6,6 @@ function CloseIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      style={{ height: "28px", width: "28px", color: "#a39e9e" }}
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -37,12 +37,12 @@ function PricingCard({ type, price, id, features, bg }) {
             <sub>/MO</sub>
           </h2>
         </div>
-        <div className="pricing__btn my-5 text-center">
+        <div className="pricing__btn my-4 py-1 py-md-0 my-md-5 text-center">
           <a href="/"> Book Now </a>
         </div>
         <ul className="pricing__feature">
-          {features.map((item) => (
-            <li>
+          {features.map((item, idx) => (
+            <li key={idx}>
               {item.checked ? (
                 <img
                   className="pricing__feature--checked me-2"

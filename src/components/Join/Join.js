@@ -1,7 +1,9 @@
+// modules
 import React from "react";
-import "./Join.css";
-
 import { Parallax } from "react-parallax";
+
+// css
+import "./Join.css";
 
 function ArrowIconRight() {
   return (
@@ -23,10 +25,7 @@ function ArrowIconRight() {
 
 function Join() {
   return (
-    <Parallax
-      bgImage="/images/companies/join-bg.jpg"
-      strength={500}
-    >
+    <Parallax bgImage="/images/companies/join-bg.jpg" strength={500}>
       <div className="join">
         <div className="container">
           <div className="join__content">

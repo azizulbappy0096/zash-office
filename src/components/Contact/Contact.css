@@ -1,7 +1,7 @@
 .contact {
   padding-top: 32px;
   padding-bottom: 28px;
-  background: url("http://localhost:3000/images/companies/bg-map.png");
+  background: url("bg-map.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -181,5 +181,55 @@
   .contact__social li a > svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact__title p {
+    font-size: 14px;
+  }
+
+  .contact__info-icon {
+    height: 56px;
+    width: 56px;
+  }
+
+  .contact__info-icon img {
+    height: 20px;
+  }
+
+  .contact__info h4 {
+    font-size: 16px;
+  }
+
+  .contact__info p,
+  .contact__info a {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .contact__social li a {
+    padding: 8px 12px;
+  }
+
+  .contact__social li a > svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contact__form .form-btn {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .contact__form .form-control {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .contact__form textarea.form-control {
+    height: auto;
+    padding-top: 12px;
   }
 }

@@ -1,5 +1,6 @@
-import Button from "@restart/ui/esm/Button";
+// modules
 import React, { useState } from "react";
+import Button from "@restart/ui/esm/Button";
 import { Form, Row, Col } from "react-bootstrap";
 
 function FormComponent() {
@@ -11,34 +12,33 @@ function FormComponent() {
 
   const handleSend = (e) => {
     e.preventDefault();
-    let tempErr = {}
-    if(name.trim() === "") {
-      tempErr.name = "Please enter your name"
-    }else {
-      delete tempErr.name
+    let tempErr = {};
+    if (name.trim() === "") {
+      tempErr.name = "Please enter your name";
+    } else {
+      delete tempErr.name;
     }
-    if(email.trim() === "") {
-      tempErr.email = "Please enter your E-mail"
+    if (email.trim() === "") {
+      tempErr.email = "Please enter your E-mail";
+    } else {
+      delete tempErr.email;
     }
-    else {
-      delete tempErr.email
+    if (subject.trim() === "") {
+      tempErr.subject = "Please enter Subject";
+    } else {
+      delete tempErr.subject;
     }
-    if(subject.trim() === "") {
-      tempErr.subject = "Please enter Subject"
-    }else {
-      delete tempErr.subject
-    }
-    if(message.trim() === "") {
-      tempErr.message = "Please enter message"
-    }else {
-      delete tempErr.message 
+    if (message.trim() === "") {
+      tempErr.message = "Please enter message";
+    } else {
+      delete tempErr.message;
     }
 
-    if(Object.keys(tempErr).length === 0) {
-      setErrors({})
-      alert("Success")
-    }else {
-      setErrors(tempErr)
+    if (Object.keys(tempErr).length === 0) {
+      setErrors({});
+      alert("Success");
+    } else {
+      setErrors(tempErr);
     }
   };
 
@@ -81,8 +81,8 @@ function FormComponent() {
           onChange={(e) => setSubject(e.target.value)}
         />
         <Form.Control.Feedback type="invalid">
-            {errors.subject}
-          </Form.Control.Feedback>
+          {errors.subject}
+        </Form.Control.Feedback>
       </Form.Group>
       <Form.Group className="mb-3" controlId="message">
         <Form.Control
@@ -94,8 +94,8 @@ function FormComponent() {
           onChange={(e) => setMessage(e.target.value)}
         />
         <Form.Control.Feedback type="invalid">
-            {errors.message}
-          </Form.Control.Feedback>
+          {errors.message}
+        </Form.Control.Feedback>
       </Form.Group>
 
       <Button className="form-btn default-btn mt-3" type="submit">

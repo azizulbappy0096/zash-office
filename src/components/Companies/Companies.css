@@ -1,34 +1,42 @@
 .companies {
-    background-color: #f8f8f8;
-    padding-top: 68px;
-    padding-bottom: 68px;
-    margin: 68px 0 0;
+  background-color: #f8f8f8;
+  padding-top: 68px;
+  padding-bottom: 68px;
+  margin: 68px 0 0;
 }
 
 .companies__title h2 {
-    color: #524552;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 24px;
+  color: #524552;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .campanies__slider img {
-    width: 150px;
-    object-fit: contain;
+  width: 150px;
+  object-fit: contain;
 }
 
-.campanies__slider:focus-visible, .campanies__slider > *:focus-visible {
-    outline: none;
+.campanies__slider:focus-visible,
+.campanies__slider > *:focus-visible {
+  outline: none;
 }
 
 @media only screen and (max-width: 767px) {
-    .companies__title h2 {
-        font-size: 18px;
-    }
+  .companies__title h2 {
+    font-size: 18px;
+  }
 
-    .campanies__slider img {
-        width: 120px;
-    }
+  .campanies__slider img {
+    width: 120px;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  
+    .campanies__slider img {
+      width: 96px;
+    }
+  }

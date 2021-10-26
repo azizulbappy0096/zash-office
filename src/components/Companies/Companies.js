@@ -1,5 +1,8 @@
+// modules
 import React from "react";
 import Slider from "react-slick";
+
+// css
 import "./Companies.css";
 
 function SwipeToSlide({ companies }) {
@@ -29,26 +32,25 @@ function SwipeToSlide({ companies }) {
 
   return (
     <Slider {...settings}>
-        {companies.map((img, idx) => (
-             <div key={idx} className="campanies__slider">
-             <img src={img} alt="company name" />
-           </div>
-        ) )}
-     
+      {companies.map((img, idx) => (
+        <div key={idx} className="campanies__slider">
+          <img src={img} alt="company name" />
+        </div>
+      ))}
     </Slider>
   );
 }
 
 function Companies() {
-    const testData = [
-        "/images/companies/1.png",
-        "/images/companies/2.png",
-        "/images/companies/3.png",
-        "/images/companies/4.png",
-        "/images/companies/5.png",
-        "/images/companies/6.png",
-        "/images/companies/7.png",
-    ]
+  const testData = [
+    "/images/companies/1.png",
+    "/images/companies/2.png",
+    "/images/companies/3.png",
+    "/images/companies/4.png",
+    "/images/companies/5.png",
+    "/images/companies/6.png",
+    "/images/companies/7.png",
+  ];
   return (
     <div className="companies">
       <div className="container">

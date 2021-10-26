@@ -1,6 +1,11 @@
+// modules
 import React from "react";
-import "./Pricing.css";
 import { Row } from "react-bootstrap";
+
+// css
+import "./Pricing.css";
+
+// components
 import PricingCard from "./PricingCard";
 
 function Pricing() {
