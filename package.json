@@ -14,7 +14,8 @@
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+"mixitup": "^3.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "mixitup": "^3.3.1"
   }
 }

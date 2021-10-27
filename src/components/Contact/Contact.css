@@ -233,3 +233,9 @@
     padding-top: 12px;
   }
 }
+
+@media only screen and (max-width: 299px) {
+  .contact__social {
+    padding-left: 50px;
+  }
+}

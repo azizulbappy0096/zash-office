@@ -35,8 +35,17 @@
 }
 
 @media only screen and (max-width: 400px) {
-  
-    .campanies__slider img {
-      width: 96px;
-    }
+  .companies__title h2 {
+    font-size: 16px;
   }
+
+  .campanies__slider img {
+    width: 96px;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  .campanies__slider img {
+    width: 80px;
+  }
+}

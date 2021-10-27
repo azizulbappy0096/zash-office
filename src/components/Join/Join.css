@@ -37,7 +37,7 @@
   background-color: #ff5d22;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.25s ease-in-out;
 }
 
@@ -62,14 +62,19 @@
   .join__content button {
     font-size: 16px;
   }
+
+  .join__content button svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 400px) {
   .join {
     padding: 90px 0;
   }
   .join__content h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .join__content p,

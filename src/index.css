@@ -1,13 +1,46 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("./assets/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("./assets/IBM_Plex_Sans/IBMPlexSans-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("./assets/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("./assets/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("./assets/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+  font-weight: 800;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.default-btn {
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  transition: all 0.35s ease-in-out;
 }
